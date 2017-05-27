@@ -176,8 +176,106 @@ header {
   background-image: url("../images/product-7.jpg");
 }
 
+/*ABOUT PAGE*/
+
+/*History div*/
+.history, .plans {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.birdhouse-image {
+  background-image: url("../images/birdhouse.jpg");
+  background-size: cover;
+  height: 100px;
+  width: 120px;
+  float: left;
+  margin: 15px;
+}
+
+#about-link {
+  color: #968772
+}
+
+#about-link:hover {
+  color: #967343
+}
+
+blockquote {
+  margin: 30px;
+  padding: 20px;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #968772;
+  font-style: italic;
+}
+
+/*Room-to-grow div*/
+.room-to-grow {
+  background-image: url("../images/background-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  margin: 30px;
+}
+
+.room-to-grow h2 {
+  margin: 0 auto;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 90px;
+}
+
+/*Facilities div*/
+/*Why isn't the photo nesting with the rest of the div?*/
+/*!broken margin*/
+#facilities {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.aside-photo {
+  background-image: url("../images/background-1.jpg");
+  background-size: cover;
+  height: 100px;
+  width: 120px;
+  float: right;
+  margin: 15px;
+}
+
+.aside-photo p {
+  position: relative;
+  display: inline;
+  top: 110px;
+  left: 0;
+  padding: 10px;
+}
+
+/*Plans div (table)*/
+.plans {
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+.plans table {
+  width: 70%;
+  border-collapse: collapse;
+}
+
+.plans td {
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #968772;
+}
+
+
+
 /*FOOTER*/
 footer {
+  /*position: static;*/
   background-color: #2B2F27;
   padding: 20px 0 20px 20px;
 }
