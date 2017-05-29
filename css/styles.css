@@ -30,7 +30,7 @@ Input Border Bottom (Focus): #967343*/
   color: #131511;
 }
 
-/*BODY... why is it not centering?*/
+/*--------BODY--------*/
 body {
   width: 1280px;
   margin: 0 auto;
@@ -43,7 +43,7 @@ p {
   font-size: 1em;
 }
 
-/*NAV BAR*/
+/*--------NAV BAR--------*/
 
 nav {
   position: fixed;
@@ -55,6 +55,7 @@ nav {
   height: 50px;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 0.9em;
+  box-shadow: 6px 6px 10px -8px;
 }
 
 .nav-links {
@@ -86,11 +87,11 @@ nav {
   /*padding: 10px 50px 0px 5px;*/
 }
 
-/*HEADER (home & about)*/
+/*--------HEADER (home & about)--------*/
 
 header {
   height: 170px;
-  /*margin: 50px auto;*/
+  margin: 50px auto;
   text-align: center;
   padding-top: 70px;
 }
@@ -105,12 +106,12 @@ header h3 {
   font-weight: lighter;
 }
 
-/*HOME PAGE*/
+/*--------HOME PAGE--------*/
 
 .home-section {
   display: flex;
   flex-wrap: wrap;
-  margin: 30px;
+  margin: 80px 30px 30px 30px;
 }
 
 .photo-box {
@@ -186,7 +187,7 @@ header h3 {
   background-image: url("../images/product-7.jpg");
 }
 
-/*ABOUT PAGE*/
+/*--------ABOUT PAGE--------*/
 
 .about-section {
   font-size: 1.5em;
@@ -293,7 +294,7 @@ header h3 {
   border-color: #968772;
 }
 
-/*NEWSLETTER PAGE*/
+/*--------NEWSLETTER PAGE--------*/
 
 .newsletter {
   display: flex;
@@ -308,8 +309,8 @@ header h3 {
 /*vmax information found at https://www.sitepoint.com/css-viewport-units-quick-start/*/
 
 form {
-  width: 45%;
-  height: 90%;
+  width: 50%;
+  height: 100%;
   padding: 30px;
   background-color: #FFFFFF;
   text-align: center;
@@ -361,10 +362,7 @@ label, #button {
 }
 
 
-
-
-
-/*FOOTER*/
+/*--------FOOTER--------*/
 footer {
   /*position: static;*/
   background-color: #2B2F27;
