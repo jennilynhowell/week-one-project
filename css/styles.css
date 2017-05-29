@@ -37,9 +37,11 @@ body {
   background-color: #F2F1E8;
   font-family: 'Merriweather', Times, serif;
   font-weight: lighter;
-  line-height: 2em;
 }
 
+p {
+  font-size: 1em;
+}
 
 /*NAV BAR*/
 
@@ -186,23 +188,37 @@ header h3 {
 
 /*ABOUT PAGE*/
 
-article {
-  overflow: auto;
+.about-section {
+  font-size: 1.5em;
+  font-weight: lighter;
+  line-height: 2em;
+}
+
+.intro, .history, .facilities, .plans {
+  width: 60%;
+  margin: 30px auto;
+  padding: 20px;
+  line-height: 2em;
+}
+
+.blockquote {
+  width: 55%;
+  margin: 20px auto;
+  padding: 10px;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #968772;
+  font-style: italic;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 /*History div*/
-/*!!Why is text messed up so bad?*/
-.history, .plans, #facilities {
-  width: 80%;
-  margin: 0 auto;
-  padding: 10px;
-}
-
 .birdhouse-image {
   background-image: url("../images/birdhouse.jpg");
   background-size: cover;
-  height: 100px;
-  width: 120px;
+  height: 90px;
+  width: 110px;
   float: left;
   margin: 15px;
 }
@@ -215,26 +231,19 @@ article {
   color: #967343
 }
 
-blockquote {
-  margin: 30px;
-  padding: 20px;
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: #968772;
-  font-style: italic;
-}
-
 /*Room-to-grow div*/
 .room-to-grow {
   background-image: url("../images/background-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: right center;
   width: 100%;
-  height: 200px;
-  margin-top: 100px;
+  height: 300px;
 }
 
-.room-to-grow h2 {
+.room-to-grow h1 {
+  font-size: 3.5em;
+  font-weight: lighter;
   margin: 0 auto;
   color: #FFFFFF;
   text-align: center;
@@ -243,32 +252,30 @@ blockquote {
 
 /*Facilities div*/
 
-#facilities h4, p {
+/*#facilities h4, p {
   float: left;
-}
+}*/
 
 .aside-photo {
   background-image: url("../images/background-1.jpg");
   background-size: cover;
-  height: 100px;
-  width: 120px;
+  height: 130px;
+  width: 180px;
   float: right;
   margin: 15px;
 }
 
-.aside-photo p {
-  /*position: relative;
-  display: inline;*/
-  /*top: 110px;
-  left: 0;
-  padding: 10px;*/
+.aside-caption {
+  font-size: 0.8em;
+  margin-top: 145px;
+  line-height: 2em;
 }
 
 /*Plans div (table)*/
-.plans {
+/*.plans {
   margin-top: 90px;
   margin-bottom: 30px;
-}
+}*/
 
 .plans table {
   width: 70%;
