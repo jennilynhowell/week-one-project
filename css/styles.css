@@ -75,7 +75,10 @@ nav {
 
 .link:hover {
   color: #CD5D67;
+  transition: color 0.3s ease-in;
 }
+
+/*Transition info found at https://css-tricks.com/almanac/properties/t/transition/*/
 
 .link:active {
   color: #968772;
@@ -115,11 +118,12 @@ header h3 {
 .home-section {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   margin: 80px 30px 30px 30px;
 }
 
 .photo-box {
-  margin: 15px;
+  margin: 5px;
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -128,36 +132,36 @@ header h3 {
 }
 
 .tag {
-  position: relative;
   margin-bottom: 27px;
   padding: 10px;
   background-color: #2B2F27;
   color: #FFFFFF;
+  font-size: 1em;
 }
 
 #endless {
-  flex: 1 1 45%;
+  flex: 1 1 60%;
   order: 1;
   height: 370px;
   background-image: url("../images/product-1.jpg");
 }
 
 #sets {
-  flex: 1 1 20%;
+  flex: 1 1 15%;
   order: 2;
   height: 370px;
   background-image: url("../images/product-2.jpg");
 }
 
 #textures {
-  flex: 1 1 20%;
+  flex: 1 1 15%;
   order: 3;
   height: 370px;
   background-image: url("../images/product-3.jpg");
 }
 
 #tea {
-  flex: 1 1 15%;
+  flex: 1 1 20%;
   order: 4;
   height: 241px;
   background-image: url("../images/product-4.jpg");
@@ -171,14 +175,15 @@ header h3 {
 }
 
 #wasabi {
-  flex: 1 1 40%;
+  flex: 1 1 35%;
   order: 6;
   height: 241px;
   background-image: url("../images/product-6.jpg");
+
 }
 
 #sunshine {
-  flex: 1 1 15%;
+  flex: 1 1 20%;
   order: 7;
   height: 241px;
   background-image: url("../images/product-7.jpg");
@@ -222,11 +227,12 @@ header h3 {
 }
 
 #about-p-link {
-  color: #968772
+  color: #968772;
 }
 
 #about-p-link:hover {
-  color: #967343
+  color: #967343;
+  transition: color 0.5s ease-in;
 }
 
 /*Room-to-grow div*/
@@ -235,6 +241,7 @@ header h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
+  background-attachment: fixed;
   width: 100%;
   height: 300px;
 }
@@ -249,10 +256,6 @@ header h3 {
 }
 
 /*Facilities div*/
-
-/*#facilities h4, p {
-  float: left;
-}*/
 
 .aside-photo {
   background-image: url("../images/background-1.jpg");
@@ -270,10 +273,6 @@ header h3 {
 }
 
 /*Plans div (table)*/
-/*.plans {
-  margin-top: 90px;
-  margin-bottom: 30px;
-}*/
 
 .plans {
   padding-top: 45px;
@@ -284,12 +283,21 @@ header h3 {
   border-collapse: collapse;
 }
 
+.plans thead {
+  text-align: center;
+}
+
 .plans td {
   padding: 10px;
   border-style: solid;
   border-width: 1px;
   border-color: #968772;
 }
+
+.shade {
+  background-color: #F3E9DD;
+}
+
 
 /*--------NEWSLETTER PAGE--------*/
 
@@ -300,7 +308,7 @@ header h3 {
   background-image: url("../images/background-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vmax;
+  min-height: 100vh;
 }
 
 /*vmax information found at https://www.sitepoint.com/css-viewport-units-quick-start/*/
@@ -343,7 +351,8 @@ label, #button {
 }
 
 .container:focus {
-  background-color: #967343
+  background-color: #967343;
+  transition: background-color 0.8s ease-in;
 }
 
 #signupButton {
@@ -356,12 +365,12 @@ label, #button {
 #signupButton:hover {
   background-color: #967343;
   color: #FFFFFF;
+  transition: background-color 0.5s ease-in;
 }
 
 
 /*--------FOOTER--------*/
 footer {
-  /*position: static;*/
   background-color: #2B2F27;
   padding: 20px 0 20px 20px;
 }
